@@ -67,8 +67,8 @@
                         </nav>
                     </div>
                     </div>
-                </div>
-            </#list>
+                </#list>
+            </div>
         </div>
     </div>
 </main>

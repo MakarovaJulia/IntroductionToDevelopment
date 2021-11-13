@@ -29,6 +29,14 @@ public class UpdateCoverServlet extends HttpServlet {
     }
 
     @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println(request.getParameter("book_id"));
+        Long bookId = Long.parseLong(request.getParameter("book_id"));
+        request.getSession().setAttribute("book_id", bookId);
+        request.getRequestDispatcher("add_cover.ftl").forward(request, response);
+    }
+
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Part part = request.getPart("file");
         Optional<BookDto> bookDto = booksService.getById((Long) request.getSession().getAttribute("book_id"));

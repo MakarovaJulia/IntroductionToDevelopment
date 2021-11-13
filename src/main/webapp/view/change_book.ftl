@@ -41,19 +41,11 @@
                 <label>
                     <textarea class="input-desc" required id="description" name="description" placeholder="Описание"></textarea>
                 </label>
-                <label class="publish">
-                    <input type="checkbox" name="publish" value="1" checked>
+                <label>
+                    <input type="checkbox" name="publish" id="publish" value="true" checked>
                     <p>Опубликовать</p>
                 </label>
             </form>
-            <div class="update-cover-wrapper">
-                <div class="update-cover-container">
-                    <form class="update-cover" action="/update-cover" method="post" enctype="multipart/form-data">
-                        <input type="file" name="file" onchange='this.form.submit();'>
-                        <p>Добавить обложку</p>
-                    </form>
-                </div>
-            </div>
             <input class="button1" type="submit" value="Сохранить" form="change-book">
         </div>
     </div>

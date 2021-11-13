@@ -42,6 +42,8 @@ public class UpdateBookServlet extends HttpServlet {
             bookDto.get().setDescription(request.getParameter("description"));
             booksService.addBook(bookDto.get());
         }
+        System.out.println(request.getParameter("publish"));
+        System.out.println(Boolean.parseBoolean(request.getParameter("publish")));
         response.sendRedirect("/profile");
     }
 }

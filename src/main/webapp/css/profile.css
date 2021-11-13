@@ -44,7 +44,7 @@
     margin-right: 1vh;
 }
 
-.update-avatar-wrapper{
+.update-back-wrapper{
     top: 0;
     position: absolute;
     width: 100%;
@@ -52,8 +52,8 @@
 }
 
 .update-avatar-container{
-    top: 25%;
-    position: relative;
+    top: 15%;
+    position: absolute;
     width: 100%;
     height: 20vh;
     margin-top: auto;

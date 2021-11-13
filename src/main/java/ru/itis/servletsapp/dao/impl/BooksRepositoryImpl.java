@@ -15,9 +15,9 @@ import java.util.Optional;
 
 public class BooksRepositoryImpl implements BooksRepository {
 
-    private final static String SQL_INSERT = "insert into books(author_id, created_at, title, description, cover_id, is_published) " +
-            "values (?, ?, ?, ?, ?, ?)";
-    private final static String SQL_UPDATE = "update books set author_id = ?, created_at = ?, title = ?, description = ?, cover_id= ?, is_published = ?  where id = ?";
+    private final static String SQL_INSERT = "insert into books(author_id, created_at, title, description, is_published) " +
+            "values (?, ?, ?, ?, ?)";
+    private final static String SQL_UPDATE = "update books set author_id = ?, created_at = ?, title = ?, description = ?, is_published = ?  where id = ?";
     private final static String SQL_UPDATE_COVER = "update books set cover_id = ? where id = ?";
     private final static String SQL_SELECT_BY_ID = "select * from books left join users on books.author_id = users.id where books.id = ?";
     private final static String SQL_SELECT_ALL = "select * from books left join users on books.author_id = users.id";
@@ -75,8 +75,7 @@ public class BooksRepositoryImpl implements BooksRepository {
                 statement.setTimestamp(2, item.getCreatedAt());
                 statement.setString(3, item.getTitle());
                 statement.setString(4, item.getDescription());
-                statement.setLong(5, item.getCoverId());
-                statement.setBoolean(6, item.getIsPublished() == null ? true : false);
+                statement.setBoolean(5, item.getIsPublished() == null ? true : false);
                 return statement;
             }, keyHolder);
             if (keyHolder.getKey() != null) {
@@ -88,7 +87,6 @@ public class BooksRepositoryImpl implements BooksRepository {
                     item.getCreatedAt(),
                     item.getTitle(),
                     item.getDescription(),
-                    item.getCoverId(),
                     item.getIsPublished(),
                     item.getId()
             );

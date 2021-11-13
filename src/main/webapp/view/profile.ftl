@@ -30,6 +30,11 @@
 </div>
 <div class="container">
     <div class="center-content">
+        <div class="update-back-wrapper">
+            <form class="update-back-photo" action="/update-back-photo" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" onchange='this.form.submit();'>
+            </form>
+        </div>
         <div class="container-profile">
             <div class="white-container">
                 <#if user.avatarId??>
@@ -41,18 +46,11 @@
                     <div class="user-info">${user.firstName}</div>
                     <div class="user-info">${user.lastName}</div>
                 </div>
-                <div class="update-avatar-wrapper">
                     <div class="update-avatar-container">
                         <form class= "update-avatar" action="/update-avatar" method="post" enctype="multipart/form-data">
                             <input type="file" name="file" onchange='this.form.submit();'>
                         </form>
                     </div>
-                </div>
-                <div class="update-avatar-wrapper">
-                    <form class="update-back-photo" action="/update-back-photo" method="post" enctype="multipart/form-data">
-                        <input type="file" name="file" onchange='this.form.submit();'>
-                    </form>
-                </div>
             </div>
             <div class="profile-content">
                 <div id="book-list" class="book-list">
@@ -82,6 +80,9 @@
                                     </nav>
                                     <nav>
                                         <li><span><a href="/add-chapter?book_id=${book.id}">Добавить главу</a></span></li>
+                                    </nav>
+                                    <nav>
+                                        <li><span><a href="/update-cover?book_id=${book.id}">Добавить обложку</a></span></li>
                                     </nav>
                                 </div>
                             </div>
