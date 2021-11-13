@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+}
+
+.user-avatar{
+    z-index: 30;
+    width: 20vh;
+    height: 20vh;
+    object-fit: cover;
+    overflow: visible;
+    clip-path: circle(50.0% at 50% 50%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+}
+
+.back-photo-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background-color: coral;
+    z-index: -10;
+}
+
+.under-photo{
+    width: 80%;
+    margin-left: 0;
+}
+
+.user-info-text{
+    font-family: 'Avenir Next', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.user-info{
+    margin-right: 1vh;
+}
+
+.update-avatar-wrapper{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+}
+
+.update-avatar-container{
+    top: 25%;
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.update-avatar{
+    position: relative;
+    width: 20vh;
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.update-avatar input{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.update-back-photo{
+    width: 100%;
+    height: 100%;
+}
+
+.update-back-photo input{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.book-list{
+    z-index: 1;
+    width: 100%;
+    position: relative;
+    max-width: 700px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 6px 6px rgba(79, 56, 46 , 0.7);
+    padding: 20px 20px;
+    margin: 30px;
+}
+
+.posts-list{
+    z-index: 1;
+    width: 100%;
+    position: relative;
+    max-width: 700px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 6px 6px rgba(79, 56, 46 , 0.7);
+    padding: 20px 20px;
+    margin: 20px;
+}
+
+.book-wrapper{
+    width: 100%;
+    height: 35vh;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.book-cover{
+    width: 20vh;
+    height: 30vh;
+    object-fit: cover;
+    overflow: visible;
+    display: block;
+    vertical-align: top;
+    margin: auto;
+    float: left;
+    background-color: aliceblue;
+}
+
+.book-details-wrapper{
+    display: block;
+    width: 60vh;
+    height: 30vh;
+    float: right;
+
+}
+
+.book-title{
+    text-align: center;
+    font-weight: bold;
+}
+
+.profile-content{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.links nav{
+    width: max-content;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.links a{
+    color: black;
+    font-weight: bold;
+}
+
+
+.details-container{
+    width: 100%;
+    height: 50px;
+    border-bottom: solid 1px rgba(16, 16, 16, 0.1);
+}
+
+.details-title-container{
+    width: fit-content;
+    height: 100%;
+    border-bottom: solid 4px coral;
+}
+
+.details-title{
+    color: rgb(64, 64, 64);
+    font-size: 9px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.book-details-wrapper{
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(180deg, #101010 20%, rgb(64 64 64) 30%, #FFFFFF);
+    -webkit-background-clip: text;
+    overflow: hidden;
+    display: block;
+    width: 60vh;
+    height: 30vh;
+    float: right;
+}

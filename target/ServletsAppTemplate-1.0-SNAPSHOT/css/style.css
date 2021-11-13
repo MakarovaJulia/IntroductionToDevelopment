@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "Avenir Next";
+    src: url("/fonts/avenir-next-lt-pro/AvenirNextLTPro-Regular.otf");
+}
+
+body {
+    font-family: 'Avenir Next', sans-serif;
+    width: 100%;
+}
+
+.container{
+    z-index: 2;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.center {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.image {
+    margin: 0 auto;
+    border: solid 2px;
+    height: 200px;
+}
+
+
+.center-content {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+
+.button{
+    position: relative;
+    display: block;
+    color: white;
+    background-color: orange;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    text-decoration: none;
+    width: 150px;
+    padding: 0;
+    border: 0;
+    font-size: 18px;
+}
+
+.button_text{
+    margin-left: 15px;
+    padding-top: 7px;
+    font-size: 18px;
+}
+
+.button1 {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: orange;
+    text-decoration: none;
+    margin: 3px 2px 0 2px;
+}
+
+.input_orange {
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    height: 40px;
+    line-height: 1.42857143;
+    color: #555;
+    background: #fff none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.input_green:focus{
+    border-color: orange;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(171, 169, 166, .6), 0 0 8px rgba(244, 243, 242, .6);
+    z-index: 2;
+}
+
+
+.button1:hover{
+    color: #fff;
+    background-color: orange;
+    border-color: orange;
+}
+
+.divider{
+    width: 100%;
+    height: 2px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #ccc0c0;
+}
+
+.container-profile{
+    margin-top: 15vh;
+}
+
+.light_gray{
+    color: darkgrey;
+    display: inline;
+}
+
+.text{
+    margin-bottom: 7px;
+    width: 40%;
+}
+
+.white-container {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.user-avatar-post{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    overflow: visible;
+    clip-path: circle(50.0% at 50% 50%);
+}

@@ -1,0 +1,302 @@
+@font-face {
+    font-family: "Avenir Next";
+    src: url("/fonts/avenir-next-lt-pro/AvenirNextLTPro-Regular.otf");
+}
+
+body {
+    font-family: 'Avenir Next', sans-serif;
+    background-color: aliceblue;
+}
+
+header{
+    z-index: 10;
+    width: 100vw;
+    height: 50px;
+    border-bottom: solid 1px rgba(16, 16, 16, 0.1);
+    position: fixed;
+    background-color: #FFFFFF;
+    opacity: 0.90;
+}
+
+.empty-container{
+    height: 50px;
+    position: relative;
+}
+
+header .inner{
+    width: 90%; /* This is the inner width of the content inside of your header (80%, etc) */
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+header .logo{
+    display: table;
+    height: 100%;
+    float: left;
+}
+
+header .logo div{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header .logo img{
+    height: 50px;
+}
+
+header nav{
+    float: right;
+    height: 100%;
+    border-radius: 5px;
+}
+
+header nav li{
+    display: table;
+    height: 100%;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header nav span {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+header nav a{
+    color: #101010;
+    padding: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.background-container{
+    top: 0;
+    left: 0;
+    z-index: -10;
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-image: url("/town.png");
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 10% 10% / 0 0 10% 10%;
+}
+
+.book-button{
+    justify-content: center;
+    width: max-content;
+    height: 100px;
+    display: flex;
+    background-color: coral;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.top{
+    position: relative;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+.portal{
+    width: 808px;
+    height: 200px;
+    margin: 136px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 600;
+    padding-top: 20px;
+    line-height: 1.5;
+    color: rgb(64, 64, 64);
+}
+
+p{
+    width: 493px;
+    font-family: "Avenir Next";
+}
+
+.published-books-container {
+    z-index: 1;
+    width: 100%;
+    position: relative;
+    max-width: 700px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 6px 6px rgba(79, 56, 46 , 0.7);
+    padding: 38px 30px;
+    margin-top: auto;
+}
+
+
+.details-container{
+    width: 100%;
+    height: 50px;
+    border-bottom: solid 1px rgba(16, 16, 16, 0.1);
+}
+
+.details-title-container{
+    width: fit-content;
+    height: 100%;
+    border-bottom: solid 4px coral;
+}
+
+label {
+    display: block;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.title {
+    text-align: center;
+    height: 45px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    min-width: 100%;
+    line-height: 1.5;
+    color: rgb(64, 64, 64);
+    background: #fff none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.form-title{
+    color: rgb(64, 64, 64 );
+    font-size: 10px;
+    padding: 10px;
+}
+
+.details-title{
+    color: rgb(64, 64, 64);
+    font-size: 9px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.input-desc{
+    text-align: left;
+    height: 150px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    min-width: 100%;
+    line-height: 1.42857143;
+    color: rgb(64, 64, 64);
+    background: #fff none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.book-wrapper{
+    width: 100%;
+    height: 35vh;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.book-cover{
+    width: 20vh;
+    height: 30vh;
+    object-fit: cover;
+    overflow: visible;
+    display: block;
+    vertical-align: top;
+    margin: auto;
+    float: left;
+    background-color: aliceblue;
+}
+
+.button1 {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: orange;
+    text-decoration: none;
+    margin: 3px 2px 0 2px;
+}
+
+form{
+    justify-content: center;
+}
+
+.publish{
+    display: flex;
+    flex-direction: row;
+}
+.publish p{
+    margin-left: 5px;
+    font-family: "Avenir Next", serif;
+}
+
+.update-cover{
+    width: 100%;
+    height: 100px;
+    border: 4px dashed #717171;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.update-cover p{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: #717171;
+    font-family: "Avenir Next", serif;
+}
+.update-cover input{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+}
